@@ -60,3 +60,77 @@ $radius-16: 16px;
 $radius-20: 20px;
 $radius-24: 24px;
 $radius-full: 999px;
+
+/* ================================
+   TYPOGRAPHY
+
+    - Important: always include fallback font families
+    - Recommended fallbacks: sans-serif / serif
+   ================================ */
+
+$ff-accent: "Big Shoulders", display;
+$ff-base: "Outfit", sans-serif;
+
+/* ================================
+   FONT WEIGHTS
+
+    - Clean up or extend core weight tokens as needed
+    - Add new values specific to the project if required
+   ================================ */
+
+$fw-light: 300;
+$fw-extra-bold: 800;
+$fw-black: 900;
+
+/* ================================
+   LETTER SPACING
+
+   - Define none / tight / loose presets
+   - Use rem units for better scaling across sizes
+   ================================ */
+
+$ls-none: 0; /* 0 */
+$ls-loose: 0.23rem; /* 3.64px */
+
+/* ================================
+   FONT SIZES
+
+   - Match naming to your design tool (e.g., Figma presets)
+   - Use relative units for responsive scaling
+   - Add project-specific values as needed
+   ================================ */
+
+$fs-preset-1: 6.00rem; /* 96px */
+$fs-preset-1-tablet: 4.38rem; /* 70px */
+$fs-preset-1-mobile: 3.75rem; /* 60px */
+
+$fs-preset-2: 4.38rem; /* 70px */
+$fs-preset-2-tablet: 3.44rem; /* 55px */
+
+$fs-preset-3: 3.75rem; /* 60px */
+$fs-preset-3-tablet: 3.13rem; /* 50px */
+
+$fs-preset-4: 2.25rem; /* 36px */
+$fs-preset-5: 1.38rem; /* 22px */
+$fs-preset-6: 1.25rem; /* 20px */
+$fs-preset-7: 1.13rem; /* 18px */
+
+/* ================================
+   LINE HEIGHTS
+   
+   - Keep ratios (1.35 / 1.5 / 1.6) consistent with typography scale
+   - Adjust per component type if necessary
+   ================================ */
+
+$lh-090: 0.9;
+$lh-100: 1;
+$lh-140: 1.4;
+
+/* ================================
+   FONT DECLARATIONS
+
+   - Define custom fonts used in this project
+   - .woff2 files can be downloaded from:
+     https://gwfh.mranftl.com/fonts
+   - Use `font-display: swap` for better performance
+   ================================ */
