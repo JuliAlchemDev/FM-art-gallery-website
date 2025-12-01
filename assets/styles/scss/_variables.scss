@@ -1,0 +1,62 @@
+/*  ================================
+   LAYOUTS & MEDIA QUERIES:
+    - Mobile: 375px
+    - Tablet: 768px -> @media (min-width: 48rem) {}
+    - Desktop: 1440px -> @media (min-width: 90rem) {}
+   ================================ */
+
+/* ================================
+   COLORS
+
+   - Add your custom palette here
+   - Keep the primary / neutral / basic color division
+   ================================ */
+
+/* Primary */
+$clr-primary-gold-500: hsl(24, 56%, 63%);
+
+/* Neutral  */
+$clr-neutral-grey-700: hsl(0, 0%, 27%);
+$clr-neutral-grey-900: hsl(0, 0%, 8%);
+
+/* Basic */
+
+$clr-basic-white: hsl(0, 0%, 100%);
+
+/* ================================
+   SPACING
+
+    - Clean up or extend spacing tokens as needed
+    - Keep consistent incremental scale (0, 100, 200, 300…)
+    - Add new values specific to the project if required (https://elementor.com/blog/px-to-rem/)
+   ================================ */
+
+$spacing-0: 0; /* 0 */
+$spacing-025: 0.15rem; /* 2px */
+$spacing-050: 0.25rem; /* 4px */
+$spacing-075: 0.4rem; /* 6px */
+$spacing-100: 0.5rem; /* 8px */
+$spacing-125: 0.65rem; /* 10px */
+$spacing-150: 0.75rem; /* 12px */
+$spacing-200: 1rem; /* 16px */
+$spacing-250: 1.25rem; /* 20px */
+$spacing-300: 1.5rem; /* 24px */
+$spacing-400: 2rem; /* 32px */
+$spacing-500: 2.5rem; /* 40px */
+$spacing-600: 3rem; /* 48px */
+$spacing-800: 4rem; /* 64px */
+$spacing-1000: 5rem; /* 80px */
+
+/* ================================
+   RADIUS
+   ================================ */
+$radius-0: 0;
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-8: 8px;
+$radius-10: 10px;
+$radius-12: 12px;
+$radius-16: 16px;
+$radius-20: 20px;
+$radius-24: 24px;
+$radius-full: 999px;
