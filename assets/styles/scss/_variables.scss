@@ -100,7 +100,7 @@ $ls-loose: 0.23rem; /* 3.64px */
    - Add project-specific values as needed
    ================================ */
 
-$fs-preset-1: 6.00rem; /* 96px */
+$fs-preset-1: 6rem; /* 96px */
 $fs-preset-1-tablet: 4.38rem; /* 70px */
 $fs-preset-1-mobile: 3.75rem; /* 60px */
 
@@ -134,3 +134,27 @@ $lh-140: 1.4;
      https://gwfh.mranftl.com/fonts
    - Use `font-display: swap` for better performance
    ================================ */
+
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/outfit-v15-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Big Shoulders";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/big-shoulders-v4-latin/big-shoulders-v4-latin-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Big Shoulders";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/big-shoulders-v4-latin/big-shoulders-v4-latin-900.woff2") format("woff2");
+}
