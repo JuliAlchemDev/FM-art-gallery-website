@@ -1,35 +1,35 @@
-/*  ================================
-   LAYOUTS & MEDIA QUERIES:
-    - Mobile: 375px
-    - Tablet: 768px -> @media (min-width: 48rem) {}
-    - Desktop: 1440px -> @media (min-width: 90rem) {}
-   ================================ */
+// /*  ================================
+//    LAYOUTS & MEDIA QUERIES:
+//     - Mobile: 375px
+//     - Tablet: 768px -> @media (min-width: 48rem) {}
+//     - Desktop: 1440px -> @media (min-width: 90rem) {}
+//    ================================ */
 
-/* ================================
-   COLORS
+// /* ================================
+//    COLORS
 
-   - Add your custom palette here
-   - Keep the primary / neutral / basic color division
-   ================================ */
+//    - Add your custom palette here
+//    - Keep the primary / neutral / basic color division
+//    ================================ */
 
-/* Primary */
+// /* Primary */
 $clr-primary-gold-500: hsl(24, 56%, 63%);
 
-/* Neutral  */
+// /* Neutral  */
 $clr-neutral-grey-700: hsl(0, 0%, 27%);
 $clr-neutral-grey-900: hsl(0, 0%, 8%);
 
-/* Basic */
+// /* Basic */
 
 $clr-basic-white: hsl(0, 0%, 100%);
 
-/* ================================
-   SPACING
+// /* ================================
+//    SPACING
 
-    - Clean up or extend spacing tokens as needed
-    - Keep consistent incremental scale (0, 100, 200, 300…)
-    - Add new values specific to the project if required (https://elementor.com/blog/px-to-rem/)
-   ================================ */
+//     - Clean up or extend spacing tokens as needed
+//     - Keep consistent incremental scale (0, 100, 200, 300…)
+//     - Add new values specific to the project if required (https://elementor.com/blog/px-to-rem/)
+//    ================================ */
 
 $spacing-0: 0; /* 0 */
 $spacing-025: 0.15rem; /* 2px */
@@ -47,9 +47,10 @@ $spacing-600: 3rem; /* 48px */
 $spacing-800: 4rem; /* 64px */
 $spacing-1000: 5rem; /* 80px */
 
-/* ================================
-   RADIUS
-   ================================ */
+// /* ================================
+//    RADIUS
+//    ================================ */
+
 $radius-0: 0;
 $radius-4: 4px;
 $radius-6: 6px;
@@ -61,44 +62,44 @@ $radius-20: 20px;
 $radius-24: 24px;
 $radius-full: 999px;
 
-/* ================================
-   TYPOGRAPHY
+// /* ================================
+//    TYPOGRAPHY
 
-    - Important: always include fallback font families
-    - Recommended fallbacks: sans-serif / serif
-   ================================ */
+//     - Important: always include fallback font families
+//     - Recommended fallbacks: sans-serif / serif
+//    ================================ */
 
 $ff-accent: "Big Shoulders", display;
 $ff-base: "Outfit", sans-serif;
 
-/* ================================
-   FONT WEIGHTS
+// /* ================================
+//    FONT WEIGHTS
 
-    - Clean up or extend core weight tokens as needed
-    - Add new values specific to the project if required
-   ================================ */
+//     - Clean up or extend core weight tokens as needed
+//     - Add new values specific to the project if required
+//    ================================ */
 
 $fw-light: 300;
 $fw-extra-bold: 800;
 $fw-black: 900;
 
-/* ================================
-   LETTER SPACING
+// /* ================================
+//    LETTER SPACING
 
-   - Define none / tight / loose presets
-   - Use rem units for better scaling across sizes
-   ================================ */
+//    - Define none / tight / loose presets
+//    - Use rem units for better scaling across sizes
+//    ================================ */
 
 $ls-none: 0; /* 0 */
 $ls-loose: 0.23rem; /* 3.64px */
 
-/* ================================
-   FONT SIZES
+// /* ================================
+//    FONT SIZES
 
-   - Match naming to your design tool (e.g., Figma presets)
-   - Use relative units for responsive scaling
-   - Add project-specific values as needed
-   ================================ */
+//    - Match naming to your design tool (e.g., Figma presets)
+//    - Use relative units for responsive scaling
+//    - Add project-specific values as needed
+//    ================================ */
 
 $fs-preset-1: 6rem; /* 96px */
 $fs-preset-1-tablet: 4.38rem; /* 70px */
@@ -115,25 +116,25 @@ $fs-preset-5: 1.38rem; /* 22px */
 $fs-preset-6: 1.25rem; /* 20px */
 $fs-preset-7: 1.13rem; /* 18px */
 
-/* ================================
-   LINE HEIGHTS
+// /* ================================
+//    LINE HEIGHTS
    
-   - Keep ratios (1.35 / 1.5 / 1.6) consistent with typography scale
-   - Adjust per component type if necessary
-   ================================ */
+//    - Keep ratios (1.35 / 1.5 / 1.6) consistent with typography scale
+//    - Adjust per component type if necessary
+//    ================================ */
 
 $lh-090: 0.9;
 $lh-100: 1;
 $lh-140: 1.4;
 
-/* ================================
-   FONT DECLARATIONS
+// /* ================================
+//    FONT DECLARATIONS
 
-   - Define custom fonts used in this project
-   - .woff2 files can be downloaded from:
-     https://gwfh.mranftl.com/fonts
-   - Use `font-display: swap` for better performance
-   ================================ */
+//    - Define custom fonts used in this project
+//    - .woff2 files can be downloaded from:
+//      https://gwfh.mranftl.com/fonts
+//    - Use `font-display: swap` for better performance
+//    ================================ */
 
 @font-face {
   font-display: swap;

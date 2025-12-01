@@ -1,0 +1,5 @@
+@use 'variables' as var;
+
+p {
+    color: var.$clr-primary-gold-500;
+}
