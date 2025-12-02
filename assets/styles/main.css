@@ -47,8 +47,60 @@
   font-weight: 900;
   src: url("../fonts/big-shoulders-v4-latin/big-shoulders-v4-latin-900.woff2") format("woff2");
 }
-p {
-  color: hsl(24, 56%, 63%);
+.main {
+  width: 92%;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  font-family: "Outfit", sans-serif;
+  text-align: start;
+  color: hsl(0, 0%, 8%);
+  font-size: 1.13rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0;
+  background-color: hsl(0, 0%, 100%);
+}
+.main .gallery,
+.main .inspiration {
+  width: 100%;
+  display: grid;
+}
+.main .gallery {
+  gap: 1.5rem;
+}
+.main .inspiration {
+  gap: 1rem;
+}
+.main img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.main .gallery__article-title, .main .inspiration__article-title {
+  font-family: "Big Shoulders", display;
+  text-transform: uppercase;
+  font-size: 3.13rem;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+.main .gallery__article {
+  display: grid;
+  gap: 1.5rem;
+}
+.main .inspiration__article {
+  padding: 3rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  gap: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
