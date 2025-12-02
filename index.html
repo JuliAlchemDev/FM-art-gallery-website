@@ -16,15 +16,15 @@
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
-    <header>
+     <header>
       <picture>
-        <!-- TODO: add img for desktop -->
+      <!-- TODO: add img for desktop  -->
         <source
           srcset="
             ./assets/images/tablet/image-hero.jpg    1x,
             ./assets/images/tablet/image-hero@2x.jpg 2x
           "
-          media="(min-width: 40em)"
+          media="(min-width: 48em)"
           width="437"
           height="700"
         />
@@ -45,7 +45,7 @@
           <picture>
             <source
               srcset="./assets/logos/logo-dark.svg"
-              media="(min-width: 40em)"
+              media="(min-width: 48em)"
               width="339"
               height="126"
             />
@@ -64,10 +64,36 @@
         </p>
         <button>Our location</button>
       </article>
-    </header>
+    </header> 
 
     <main>
       <section>
+        <picture>
+           <source
+          srcset="
+            ./assets/images/desktop/image-grid-1.jpg    1x,
+            ./assets/images/desktop/image-grid-1@2x.jpg 2x
+          "
+          media="(min-width: 90rem)"
+          width="635"
+          height="400"
+          />
+          <source
+          srcset="
+            ./assets/images/tablet/image-grid-1.jpg    1x,
+            ./assets/images/tablet/image-grid-1@2x.jpg 2x
+          "
+          media="(min-width: 48rem)"
+          width="398"
+          height="400"
+          />
+          <img src="./assets/images/mobile/image-grid-1.jpg"
+          srcset="./assets/images/mobile/image-grid-1.jpg 1x,
+          ./assets/images/mobile/image-grid-1@2x.jpg 2x" 
+          width="343"
+          height="320"
+          alt="">
+        </picture>
         <article>
           <h2>Your day at the gallery</h2>
           <p>
@@ -77,6 +103,58 @@
         </article>
       </section>
       <section>
+        <picture>
+           <source
+          srcset="
+            ./assets/images/desktop/image-grid-2.jpg    1x,
+            ./assets/images/desktop/image-grid-2@2x.jpg 2x
+          "
+          media="(min-width: 90rem)"
+          width="635"
+          height="720"
+          /> 
+          <source
+          srcset="
+            ./assets/images/tablet/image-grid-2.jpg    1x,
+            ./assets/images/tablet/image-grid-2@2x.jpg 2x
+          "
+          media="(min-width: 48rem)"
+          width="398"
+          height="720"
+          /> 
+          <img src="./assets/images/mobile/image-grid-2.jpg"
+          srcset="./assets/images/mobile/image-grid-2.jpg 1x,
+          ./assets/images/mobile/image-grid-2@2x.jpg 2x" 
+          width="343"
+          height="480"
+          alt="">
+        </picture>
+         <picture>
+           <source
+          srcset="
+            ./assets/images/desktop/image-grid-3.jpg    1x,
+            ./assets/images/desktop/image-grid-3@2x.jpg 2x
+          "
+          media="(min-width: 90rem)"
+          width="445"
+          height="313"
+          /> 
+          <source
+          srcset="
+            ./assets/images/tablet/image-grid-3.jpg    1x,
+            ./assets/images/tablet/image-grid-3@2x.jpg 2x
+          "
+          media="(min-width: 48rem)"
+          width="280"
+          height="313"
+          /> 
+          <img src="./assets/images/mobile/image-grid-3.jpg"
+          srcset="./assets/images/mobile/image-grid-3.jpg 1x,
+          ./assets/images/mobile/image-grid-3@2x.jpg 2x" 
+          width="343"
+          height="200"
+          alt="">
+        </picture>
         <article>
           <h2>Come &amp; be inspired</h2>
           <p>
@@ -122,6 +200,6 @@
           <li><a href="https://x.com/?lang=es" class="sr-only">Twitter</a></li>
         </ul>
       </nav>
-    </footer>
+    </footer> 
   </body>
 </html>
