@@ -18,7 +18,24 @@
   <body>
     <header>
       <picture>
-        <img src="" alt="" />
+        <!-- TODO: add img for desktop -->
+        <source
+          srcset="./assets/images/tablet/image-hero.jpg 1x,
+          ./assets/images/tablet/image-hero@2x.jpg 2x"
+          media="(min-width: 40em)"
+          width="437"
+          height="700"    
+        />
+        <img
+          src="./assets/images/mobile/image-hero.jpg"
+          srcset="
+            ./assets/images/mobile/image-hero.jpg 1x,
+            ./assets/images/mobile/image-hero@2x.jpg 2x
+          "
+          alt=""
+          width="375"
+          height="240"
+        />
       </picture>
       <article>
         <picture>
@@ -33,7 +50,7 @@
       </article>
     </header>
 
-    <main>
+    <!-- <main>
       Your day at the gallery Wander through our distinct collections and find
       new insights about our artists. Dive into the details of their creative
       process. Come &amp; be inspired We’re excited to welcome you to our
@@ -44,6 +61,6 @@
       Modern Art Gallery The Modern Art Gallery is free to all visitors and open
       seven days a week from 8am to 9pm. Find us at 99 King Street, Newport,
       USA.
-    </footer>
+    </footer> -->
   </body>
 </html>
