@@ -1,4 +1,5 @@
 @use "../variables" as var;
+@use "../mixins" as mix;
 
 .main {
   width: 92%;
@@ -15,16 +16,62 @@
   letter-spacing: var.$ls-none;
   background-color: var.$clr-basic-white;
 
+  @include mix.respond-to(tablet) {
+    gap: var.$spacing-150; // 12px
+  }
+
   .gallery,
   .inspiration {
     width: 100%;
     display: grid;
   }
   .gallery {
+    grid-template-columns: 1fr;
     gap: var.$spacing-300; // 24px
+
+    @include mix.respond-to(tablet) {
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "article picture";
+      .gallery__article {
+        grid-area: article;
+        max-width: 40%;
+      }
+      picture {
+        grid-area: picture;
+      }
+      .gallery__article-text {
+        color: var.$clr-neutral-grey-700;
+      }
+    }
   }
+
   .inspiration {
     gap: var.$spacing-200; // 16px
+
+    @include mix.respond-to(tablet) {
+      grid-template-columns: 58% 41%;
+
+      grid-template-rows: auto auto;
+      gap: 12px;
+      grid-template-areas:
+        "picture1 picture2"
+        "picture1 article";
+      .inspiration__article {
+        padding: var.$spacing-1000 var.$spacing-400; // 80px 32px;
+        grid-area: article;
+      }
+      .inspiration__pic-1 {
+        grid-area: picture1;
+      }
+      .inspiration__pic-2 {
+        grid-area: picture2;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
   }
 
   img {
@@ -42,13 +89,13 @@
     line-height: var.$lh-090;
     letter-spacing: var.$ls-none;
   }
-  .inspiration__article-title{
+  .inspiration__article-title {
     @extend %article-title;
   }
   .gallery__article-title {
     @extend %article-title;
   }
-  
+
   .gallery__article {
     display: grid;
     gap: var.$spacing-300; // 24px;
