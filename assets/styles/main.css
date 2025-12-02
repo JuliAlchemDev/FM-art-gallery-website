@@ -99,7 +99,7 @@
   .main .inspiration {
     grid-template-columns: 58% 41%;
     grid-template-rows: auto auto;
-    gap: 12px;
+    gap: 0.75rem;
     grid-template-areas: "picture1 picture2" "picture1 article";
   }
   .main .inspiration .inspiration__article {
