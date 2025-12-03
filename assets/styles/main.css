@@ -192,7 +192,7 @@
   place-items: center;
   padding: 4px;
 }
-.footer .footer__nav-list .footer__nav-list-item:hover {
+.footer .footer__nav-list .footer__nav-list-item:focus {
   outline: 3px solid hsl(24, 56%, 63%);
 }
 .footer .footer__nav-list .footer__nav-link {
@@ -204,11 +204,20 @@
 .footer .footer__nav-list .footer__nav-link[data-network=facebook] {
   background-image: url("/assets/icons/social/icon-facebook.svg");
 }
+.footer .footer__nav-list .footer__nav-link[data-network=facebook]:hover {
+  background-image: url("/assets/icons/social/hover-facebook.svg");
+}
 .footer .footer__nav-list .footer__nav-link[data-network=instagram] {
   background-image: url("/assets/icons/social/icon-instagram.svg");
 }
+.footer .footer__nav-list .footer__nav-link[data-network=instagram]:hover {
+  background-image: url("/assets/icons/social/hover-instagram.svg");
+}
 .footer .footer__nav-list .footer__nav-link[data-network=twitter] {
   background-image: url("/assets/icons/social/icon-twitter.svg");
+}
+.footer .footer__nav-list .footer__nav-link[data-network=twitter]:hover {
+  background-image: url("/assets/icons/social/hover-twitter.svg");
 }
 
 .sr-only:not(:focus):not(:active) {

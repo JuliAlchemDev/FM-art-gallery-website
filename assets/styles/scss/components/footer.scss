@@ -50,7 +50,7 @@
       place-items: center;
       padding: 4px;
 
-      &:hover {
+      &:focus {
         outline: 3px solid var.$clr-primary-gold-500;
       }
     }
@@ -62,14 +62,24 @@
 
       &[data-network="facebook"] {
         background-image: url("/assets/icons/social/icon-facebook.svg");
+
+        &:hover {
+            background-image: url("/assets/icons/social/hover-facebook.svg");
+        }
       }
 
       &[data-network="instagram"] {
         background-image: url("/assets/icons/social/icon-instagram.svg");
+        &:hover {
+            background-image: url("/assets/icons/social/hover-instagram.svg");
+        }
       }
 
       &[data-network="twitter"] {
         background-image: url("/assets/icons/social/icon-twitter.svg");
+        &:hover {
+            background-image: url("/assets/icons/social/hover-twitter.svg");
+        }
       }
     }
   }
