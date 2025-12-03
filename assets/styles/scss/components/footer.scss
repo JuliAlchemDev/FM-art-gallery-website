@@ -16,18 +16,25 @@
   line-height: var.$lh-140;
   letter-spacing: var.$ls-none;
 
-   @include mix.respond-to(tablet) {
+  @include mix.respond-to(tablet) {
     grid-template-columns: 60% auto;
     justify-content: space-between;
+  }
+  @include mix.respond-to(desktop) {
+    padding: var.$spacing-1000 10.31rem; //80px 165px
   }
 
   .footer__article {
     display: grid;
     gap: var.$spacing-500; //40px
+
     @include mix.respond-to(tablet) {
-    grid-template-columns: auto 1fr;
-    gap: var.$spacing-800; //64px
-  }
+      grid-template-columns: auto 60%;
+      gap: var.$spacing-800; //64px
+    }
+    @include mix.respond-to(desktop) {
+      justify-content: space-between;
+    }
   }
 
   .footer__nav-list {
@@ -66,8 +73,6 @@
       }
     }
   }
-
-  
 }
 
 .sr-only:not(:focus):not(:active) {

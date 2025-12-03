@@ -160,14 +160,24 @@
     justify-content: space-between;
   }
 }
+@media (min-width: 90rem) {
+  .footer {
+    padding: 5rem 10.31rem;
+  }
+}
 .footer .footer__article {
   display: grid;
   gap: 2.5rem;
 }
 @media (min-width: 48rem) {
   .footer .footer__article {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 60%;
     gap: 4rem;
+  }
+}
+@media (min-width: 90rem) {
+  .footer .footer__article {
+    justify-content: space-between;
   }
 }
 .footer .footer__nav-list {
