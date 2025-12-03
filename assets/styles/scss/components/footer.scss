@@ -24,13 +24,18 @@
     list-style: none;
     padding: 0;
     width: fit-content;
-   
+
     display: flex;
     gap: var.$spacing-250; //20px
 
     .footer__nav-list-item {
-        display: grid;
-        place-items: center;      
+      display: grid;
+      place-items: center;
+      padding: 4px;
+
+      &:hover {
+        outline: 3px solid var.$clr-primary-gold-500;
+      }
     }
     .footer__nav-link {
       width: 20px;
@@ -40,10 +45,6 @@
 
       &[data-network="facebook"] {
         background-image: url("/assets/icons/social/icon-facebook.svg");
-        &:hover {
-          background-image: linear-gradient(center, var.$clr-primary-gold-500, var.$clr-primary-gold-500 ),
-          url("/assets/icons/social/icon-facebook-white.svg");
-        }
       }
 
       &[data-network="instagram"] {
@@ -53,7 +54,6 @@
       &[data-network="twitter"] {
         background-image: url("/assets/icons/social/icon-twitter.svg");
       }
-      
     }
   }
 }

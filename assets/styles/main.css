@@ -168,6 +168,10 @@
 .footer .footer__nav-list .footer__nav-list-item {
   display: grid;
   place-items: center;
+  padding: 4px;
+}
+.footer .footer__nav-list .footer__nav-list-item:hover {
+  outline: 3px solid hsl(24, 56%, 63%);
 }
 .footer .footer__nav-list .footer__nav-link {
   width: 20px;
@@ -177,9 +181,6 @@
 }
 .footer .footer__nav-list .footer__nav-link[data-network=facebook] {
   background-image: url("/assets/icons/social/icon-facebook.svg");
-}
-.footer .footer__nav-list .footer__nav-link[data-network=facebook]:hover {
-  background-image: linear-gradient(center, hsl(24, 56%, 63%), hsl(24, 56%, 63%)), url("/assets/icons/social/icon-facebook-white.svg");
 }
 .footer .footer__nav-list .footer__nav-link[data-network=instagram] {
   background-image: url("/assets/icons/social/icon-instagram.svg");
