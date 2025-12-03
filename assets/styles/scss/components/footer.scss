@@ -15,9 +15,19 @@
   font-weight: var.$fw-light;
   line-height: var.$lh-140;
   letter-spacing: var.$ls-none;
+
+   @include mix.respond-to(tablet) {
+    grid-template-columns: 60% auto;
+    justify-content: space-between;
+  }
+
   .footer__article {
     display: grid;
     gap: var.$spacing-500; //40px
+    @include mix.respond-to(tablet) {
+    grid-template-columns: auto 1fr;
+    gap: var.$spacing-800; //64px
+  }
   }
 
   .footer__nav-list {
@@ -56,6 +66,8 @@
       }
     }
   }
+
+  
 }
 
 .sr-only:not(:focus):not(:active) {

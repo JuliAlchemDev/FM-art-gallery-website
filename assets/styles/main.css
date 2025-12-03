@@ -154,9 +154,21 @@
   line-height: 1.4;
   letter-spacing: 0;
 }
+@media (min-width: 48rem) {
+  .footer {
+    grid-template-columns: 60% auto;
+    justify-content: space-between;
+  }
+}
 .footer .footer__article {
   display: grid;
   gap: 2.5rem;
+}
+@media (min-width: 48rem) {
+  .footer .footer__article {
+    grid-template-columns: auto 1fr;
+    gap: 4rem;
+  }
 }
 .footer .footer__nav-list {
   list-style: none;
