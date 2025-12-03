@@ -8,13 +8,14 @@
   gap: var.$spacing-400; // 32px
   font-family: var.$ff-base;
   text-align: start;
-  // text-preset-7
+  background-color: var.$clr-basic-white;
   color: var.$clr-neutral-grey-900;
+  // text-preset-7
   font-size: var.$fs-preset-7;
   font-weight: var.$fw-light;
   line-height: var.$lh-140;
   letter-spacing: var.$ls-none;
-  background-color: var.$clr-basic-white;
+  
 
   @include mix.respond-to(tablet) {
     gap: var.$spacing-150; // 12px
