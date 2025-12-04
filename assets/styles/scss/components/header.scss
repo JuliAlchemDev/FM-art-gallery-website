@@ -5,9 +5,16 @@
   display: grid;
   place-items: center;
   gap: var.$spacing-400; // 32px
+
   .header__hero {
-    max-inline-size: 100%;
-    height: auto;
+    width: 100%;
+    block-size: auto;
+
+    img {
+      width: 100%;
+      block-size: auto;
+      object-fit: cover;
+    }
   }
 
   .header__article {
@@ -20,6 +27,7 @@
     font-weight: var.$fw-light;
     line-height: var.$lh-140;
     letter-spacing: var.$ls-none;
+    color: var.$clr-neutral-grey-700;
 
     .header__logo {
       display: grid;
@@ -29,6 +37,15 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  @include mix.respond-to(tablet) {
+    grid-template-columns: 57% 43%;
+    gap: 0;
+    .header__article {
+      justify-self: start;
+      margin-inline-start: calc(-1 * var.$spacing-600); // -48px
     }
   }
 }
