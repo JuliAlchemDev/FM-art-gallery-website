@@ -1,0 +1,34 @@
+@use "../variables" as var;
+@use "../mixins" as mix;
+
+.header {
+  display: grid;
+  place-items: center;
+  gap: var.$spacing-400; // 32px
+  .header__hero {
+    max-inline-size: 100%;
+    height: auto;
+  }
+
+  .header__article {
+    max-width: 92%;
+    display: grid;
+    gap: var.$spacing-400; // 32px
+    font-family: var.$ff-base;
+    // text-preset-7
+    font-size: var.$fs-preset-7;
+    font-weight: var.$fw-light;
+    line-height: var.$lh-140;
+    letter-spacing: var.$ls-none;
+
+    .header__logo {
+      display: grid;
+      justify-content: start;
+
+      max-inline-size: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

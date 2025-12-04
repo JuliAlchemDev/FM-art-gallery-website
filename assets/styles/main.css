@@ -47,6 +47,34 @@
   font-weight: 900;
   src: url("../fonts/big-shoulders-v4-latin/big-shoulders-v4-latin-900.woff2") format("woff2");
 }
+.header {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+.header .header__hero {
+  max-inline-size: 100%;
+  height: auto;
+}
+.header .header__article {
+  max-width: 92%;
+  display: grid;
+  gap: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.13rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.header .header__article .header__logo {
+  display: grid;
+  justify-content: start;
+  max-inline-size: 100%;
+}
+.header .header__article .header__logo img {
+  width: 100%;
+}
+
 .main {
   width: 92%;
   display: grid;
