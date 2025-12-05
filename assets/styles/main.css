@@ -368,6 +368,53 @@
   width: 1px;
 }
 
+.location-info {
+  width: 100%;
+  padding: 5rem 1rem;
+  display: grid;
+  gap: 3rem;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.13rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 100%);
+}
+.location-info .location-info__title {
+  font-family: "Big Shoulders", display;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.44rem;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+.location-info .location-info__article {
+  display: grid;
+  gap: 1.25rem;
+}
+.location-info .location-info__article .location-info__address {
+  display: grid;
+  gap: 1.25rem;
+  font-style: normal;
+}
+.location-info .location-info__article .location-info__address .location-info__street {
+  color: hsl(24, 56%, 63%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders", display;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+@media (min-width: 48rem) {
+  .location-info {
+    padding: 5rem 2.5rem;
+    grid-template-columns: minmax(250px, 300px) fit-content(50%);
+    justify-content: space-between;
+  }
+}
 body {
   display: grid;
   place-items: center;
