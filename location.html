@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/css/reset.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
-</head>
-<body class="page--location">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  Back to Home
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <body class="page--location">
+    <main class="map">
+      <a href="./index.html" class="header__link link--home">Back to Home</a>
+    </main>
 
-  Our location
+    <section class="location-info">
+      <h1 class="location-info__title">Our location</h1>
+      <article class="location-info__article">
+        <address class="location-info__address">
+          <span class="location-info__street">99 King Street</span>
+          Newport <br />
+          RI 02840 <br />
+          United States of America 
+        </address>
+        <p class="location-info__description">
+          Our newly opened gallery is located near the Edward King House on 99
+          King Street, the Modern Art Gallery is free to all visitors and open
+          seven days a week from 8am to 9pm.
+        </p>
+      </article>
+    </section>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
-
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
-
- <footer class="footer">
+    <footer class="footer">
       <article class="footer__article">
         <h3 class="footer__article-title">
           <span class="sr-only">Modern Art Gallery</span>
@@ -53,24 +65,34 @@
       <nav class="footer__nav" aria-label="Social Media Links">
         <ul class="footer__nav-list">
           <li class="footer__nav-list-item">
-            <a href="https://www.facebook.com" class="footer__nav-link" data-network="facebook">
-              <span class="sr-only">Facebook</span>
-              
-              </a
+            <a
+              href="https://www.facebook.com"
+              class="footer__nav-link"
+              data-network="facebook"
             >
+              <span class="sr-only">Facebook</span>
+            </a>
           </li>
           <li class="footer__nav-list-item">
-            <a href="https://www.instagram.com" class="footer__nav-link" data-network="instagram">
+            <a
+              href="https://www.instagram.com"
+              class="footer__nav-link"
+              data-network="instagram"
+            >
               <span class="sr-only">Instagram</span></a
             >
           </li>
           <li class="footer__nav-list-item">
-            <a href="https://x.com/?lang=es" class="footer__nav-link" data-network="twitter">
+            <a
+              href="https://x.com/?lang=es"
+              class="footer__nav-link"
+              data-network="twitter"
+            >
               <span class="sr-only">Twitter</span>
             </a>
           </li>
         </ul>
       </nav>
     </footer>
-</body>
+  </body>
 </html>
