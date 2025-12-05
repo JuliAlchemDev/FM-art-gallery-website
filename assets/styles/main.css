@@ -320,6 +320,9 @@
   display: inline-block;
   background: no-repeat center;
 }
+.footer .footer__nav-list .footer__nav-link:focus {
+  outline: 3px solid hsl(24, 56%, 63%);
+}
 .footer .footer__nav-list .footer__nav-link[data-network=facebook] {
   background-image: url("/assets/icons/social/icon-facebook.svg");
 }
@@ -337,6 +340,22 @@
 }
 .footer .footer__nav-list .footer__nav-link[data-network=twitter]:hover {
   background-image: url("/assets/icons/social/hover-twitter.svg");
+}
+.page--location .footer {
+  background-color: hsl(24, 56%, 63%);
+  color: hsl(0, 0%, 8%);
+}
+.page--location .footer .footer__article-logo {
+  filter: invert(1);
+}
+.page--location .footer .footer__nav-link {
+  filter: invert(1);
+}
+.page--location .footer .footer__nav-link:hover {
+  filter: brightness(0) invert(1);
+}
+.page--location .footer .footer__nav-link:focus {
+  filter: brightness(0);
 }
 
 .sr-only:not(:focus):not(:active) {

@@ -51,15 +51,18 @@
       padding: 4px;
 
       &:focus {
-        outline: 3px solid var.$clr-primary-gold-500;
+        outline: 3px solid var.$clr-primary-gold-500; 
       }
+    
     }
     .footer__nav-link {
       width: 20px;
       height: 20px;
       display: inline-block;
       background: no-repeat center;
-
+     &:focus {
+        outline: 3px solid var.$clr-primary-gold-500; 
+      }
       &[data-network="facebook"] {
         background-image: url("/assets/icons/social/icon-facebook.svg");
 
@@ -81,6 +84,26 @@
             background-image: url("/assets/icons/social/hover-twitter.svg");
         }
       }
+      
+    }
+  }
+
+  .page--location  & {
+    background-color: var.$clr-primary-gold-500;
+    color: var.$clr-neutral-grey-900;
+    .footer__article-logo{
+      filter: invert(1);
+    }
+    .footer__nav-link {
+      filter: invert(1);
+
+      &:hover {
+        filter: brightness(0) invert(1);
+      }
+      &:focus {
+        filter: brightness(0);
+      }
+
     }
   }
 }
