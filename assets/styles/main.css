@@ -344,6 +344,7 @@
 .page--location .footer {
   background-color: hsl(24, 56%, 63%);
   color: hsl(0, 0%, 8%);
+  padding: 3rem 1rem;
 }
 .page--location .footer .footer__article-logo {
   filter: invert(1);
@@ -411,14 +412,25 @@
 @media (min-width: 48rem) {
   .location-info {
     padding: 5rem 2.5rem;
-    grid-template-columns: minmax(250px, 300px) fit-content(50%);
+    grid-template-columns: minmax(250px, 300px) 50%;
     justify-content: space-between;
   }
 }
-body {
-  display: grid;
-  place-items: center;
-  gap: 100px;
+@media (min-width: 90rem) {
+  .location-info {
+    padding: 8rem 0;
+    font-size: 1.38rem;
+    line-height: 1.4;
+    justify-content: space-around;
+  }
+  .location-info .location-info__title {
+    font-size: 4.38rem;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  .location-info .location-info__article, .location-info .location-info__address {
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

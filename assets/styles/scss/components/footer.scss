@@ -91,6 +91,7 @@
   .page--location  & {
     background-color: var.$clr-primary-gold-500;
     color: var.$clr-neutral-grey-900;
+    padding:  var.$spacing-600 var.$spacing-200;// 48px 16px;
     .footer__article-logo{
       filter: invert(1);
     }

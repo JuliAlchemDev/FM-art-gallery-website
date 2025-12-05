@@ -46,11 +46,26 @@
 
   @include mix.respond-to(tablet) {
     padding: var.$spacing-1000 var.$spacing-500; // 80px 40px;
-    grid-template-columns: minmax(250px, 300px) fit-content(50%);
+    grid-template-columns: minmax(250px, 300px) 50%;
     justify-content: space-between;
   }
 
   @include mix.respond-to(desktop) {
+    padding: calc(var.$spacing-1000 + var.$spacing-600) 0; //160px
+    // // preset 5
+    font-size: var.$fs-preset-5;
+    line-height: var.$lh-140;
+    justify-content: space-around;
+    .location-info__title {
+      // preset 2
+      font-size: var.$fs-preset-2;
+      line-height: var.$lh-100;
+      letter-spacing: var.$ls-none;
+    }
+    .location-info__article, .location-info__address {
+    gap: var.$spacing-400; //32px
+
+  }
   }
 }
-// 768 = 100% 233px = 30.34% 398px = 51.82% gap
+
