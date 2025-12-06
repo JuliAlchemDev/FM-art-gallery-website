@@ -1,11 +1,18 @@
-@use './components/header.scss';
-@use './components/header_link.scss';
-@use './components/main-gallery.scss';
-@use './components/footer.scss';
-@use './components/location-info.scss';
+@use "./components/header.scss";
+@use "./components/header_link.scss";
+@use "./components/main-gallery.scss";
+@use "./components/footer.scss";
+@use "./components/location-info.scss";
+@use "./components/location-map.scss";
 
-// body {
-//     display: grid;
-//     place-items: center;
-//     gap: 100px;
-// }
+.page--location {
+    place-items: end;
+    gap: 0;
+  }
+body {
+  display: grid;
+  place-items: center;
+  gap: 100px;
+
+  
+}

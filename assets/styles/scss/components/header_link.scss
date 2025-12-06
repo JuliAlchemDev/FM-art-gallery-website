@@ -16,7 +16,7 @@
     text-transform: uppercase;
     position: relative;
 
-    &::before{
+    &::after{
         content: '';
         position: absolute;
         right:  calc(var.$spacing-300 * -2);
@@ -34,7 +34,7 @@
 
     &:hover {
         background-color: var.$clr-primary-gold-500;
-        &::before{
+        &::after{
             background-image: 
         url('../icons/navigation/icon-arrow-right.svg'),
         linear-gradient(var.$clr-neutral-grey-900, var.$clr-neutral-grey-900);

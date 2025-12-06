@@ -147,7 +147,7 @@
   text-transform: uppercase;
   position: relative;
 }
-.header__link::before {
+.header__link::after {
   content: "";
   position: absolute;
   right: -3rem;
@@ -162,7 +162,7 @@
 .header__link:hover {
   background-color: hsl(24, 56%, 63%);
 }
-.header__link:hover::before {
+.header__link:hover::after {
   background-image: url("../icons/navigation/icon-arrow-right.svg"), linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%));
 }
 
@@ -431,6 +431,72 @@
   .location-info .location-info__article, .location-info .location-info__address {
     gap: 2rem;
   }
+}
+
+.map {
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+.map .leaflet-layer {
+  filter: grayscale(100%) contrast(150%) brightness(85%);
+}
+.map .leaflet-bar {
+  display: none;
+}
+.map .leaflet-control-attribution,
+.map .leaflet-control-attribution a {
+  background-color: hsl(24, 56%, 63%);
+  padding: 0.25rem;
+  font-family: "Big Shoulders", display;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 8%);
+  font-weight: 800;
+}
+.map .link--home {
+  position: absolute;
+  top: 2%;
+  left: calc(2% + 3rem);
+  z-index: 999;
+  color: hsl(0, 0%, 100%);
+}
+.map .link--home:after {
+  display: none;
+}
+.map .link--home::before {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  width: 0;
+  height: 100%;
+  padding: 1.5rem;
+  background-image: url("../icons/navigation/icon-arrow-left.svg"), linear-gradient(hsl(24, 56%, 63%), hsl(24, 56%, 63%));
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+.map .link--home:hover {
+  background-color: hsl(24, 56%, 63%);
+}
+.map .link--home:hover::before {
+  background-image: url("../icons/navigation/icon-arrow-left.svg"), linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%));
+}
+@media (min-width: 48rem) {
+  .map {
+    height: 600px;
+  }
+}
+
+.page--location {
+  place-items: end;
+  gap: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  gap: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
