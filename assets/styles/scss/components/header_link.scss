@@ -15,7 +15,8 @@
     letter-spacing: var.$ls-loose;
     text-transform: uppercase;
     position: relative;
-
+    z-index: 1;
+    outline: none;
     &::after{
         content: '';
         position: absolute;
@@ -40,4 +41,19 @@
         linear-gradient(var.$clr-neutral-grey-900, var.$clr-neutral-grey-900);
         }
     }
+    &:focus-visible {
+        &::before {
+            position: absolute;
+            content: '';
+            top: -4%;
+            left: -2%;
+            background-color: transparent;
+            outline: 3px solid var.$clr-primary-gold-500; 
+            width: 126%;
+            height: 108%;
+            z-index: -2;
+        }
+        
+       
+    } 
 }

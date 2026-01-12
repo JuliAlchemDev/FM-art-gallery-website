@@ -54,7 +54,6 @@
     &:hover,
     &:focus-visible {
       background-color: var.$clr-primary-gold-500;
-      outline: none;
       &::before {
         background-image: url("../icons/navigation/icon-arrow-left.svg"),
           linear-gradient(var.$clr-neutral-grey-900, var.$clr-neutral-grey-900);

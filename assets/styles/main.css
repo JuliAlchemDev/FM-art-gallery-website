@@ -146,6 +146,8 @@
   letter-spacing: 0.23rem;
   text-transform: uppercase;
   position: relative;
+  z-index: 1;
+  outline: none;
 }
 .header__link::after {
   content: "";
@@ -164,6 +166,17 @@
 }
 .header__link:hover::after {
   background-image: url("../icons/navigation/icon-arrow-right.svg"), linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%));
+}
+.header__link:focus-visible::before {
+  position: absolute;
+  content: "";
+  top: -4%;
+  left: -2%;
+  background-color: transparent;
+  outline: 3px solid hsl(24, 56%, 63%);
+  width: 126%;
+  height: 108%;
+  z-index: -2;
 }
 
 .main {
@@ -526,7 +539,6 @@
 }
 .map .link--home:hover, .map .link--home:focus-visible {
   background-color: hsl(24, 56%, 63%);
-  outline: none;
 }
 .map .link--home:hover::before, .map .link--home:focus-visible::before {
   background-image: url("../icons/navigation/icon-arrow-left.svg"), linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%));
