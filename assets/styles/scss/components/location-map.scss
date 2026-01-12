@@ -33,10 +33,6 @@
     z-index: 999;
     color: var.$clr-basic-white;
     &:after {
-      display: none;
-    }
-
-    &::before {
       content: "";
       position: absolute;
       left: calc(var.$spacing-300 * -2);
@@ -49,16 +45,19 @@
       background-position: center;
       background-repeat: no-repeat;
       z-index: 999;
-    }
-
+    } 
     &:hover,
     &:focus-visible {
       background-color: var.$clr-primary-gold-500;
-      &::before {
+      &::after {
         background-image: url("../icons/navigation/icon-arrow-left.svg"),
           linear-gradient(var.$clr-neutral-grey-900, var.$clr-neutral-grey-900);
       }
+      &::before{
+      left: -24%;
     }
+    }
+    
   }
 
   @include mix.respond-to(tablet) {

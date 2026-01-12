@@ -522,9 +522,6 @@
   color: hsl(0, 0%, 100%);
 }
 .map .link--home:after {
-  display: none;
-}
-.map .link--home::before {
   content: "";
   position: absolute;
   left: -3rem;
@@ -540,8 +537,11 @@
 .map .link--home:hover, .map .link--home:focus-visible {
   background-color: hsl(24, 56%, 63%);
 }
-.map .link--home:hover::before, .map .link--home:focus-visible::before {
+.map .link--home:hover::after, .map .link--home:focus-visible::after {
   background-image: url("../icons/navigation/icon-arrow-left.svg"), linear-gradient(hsl(0, 0%, 8%), hsl(0, 0%, 8%));
+}
+.map .link--home:hover::before, .map .link--home:focus-visible::before {
+  left: -24%;
 }
 @media (min-width: 48rem) {
   .map {
