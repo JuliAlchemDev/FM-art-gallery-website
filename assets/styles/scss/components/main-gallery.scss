@@ -32,17 +32,22 @@
 
     @include mix.respond-to(tablet) {
       align-items: center;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr max-content;
       grid-template-areas: "article picture";
       .gallery__article {
         grid-area: article;
-        max-width: 40%;
+        max-width: 100%;
       }
       picture {
         grid-area: picture;
+        width: 100%;
+      }
+      .gallery__article-title {
+        width: 60%;
       }
       .gallery__article-text {
         color: var.$clr-neutral-grey-700;
+        width: 80%;
       }
     }
   }

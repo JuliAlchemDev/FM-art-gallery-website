@@ -197,18 +197,23 @@
 @media (min-width: 48rem) {
   .main .gallery {
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr max-content;
     grid-template-areas: "article picture";
   }
   .main .gallery .gallery__article {
     grid-area: article;
-    max-width: 40%;
+    max-width: 100%;
   }
   .main .gallery picture {
     grid-area: picture;
+    width: 100%;
+  }
+  .main .gallery .gallery__article-title {
+    width: 60%;
   }
   .main .gallery .gallery__article-text {
     color: hsl(0, 0%, 27%);
+    width: 80%;
   }
 }
 .main .inspiration {
