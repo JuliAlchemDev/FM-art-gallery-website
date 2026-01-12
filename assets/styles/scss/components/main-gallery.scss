@@ -15,10 +15,13 @@
   font-weight: var.$fw-light;
   line-height: var.$lh-140;
   letter-spacing: var.$ls-none;
-  
 
   @include mix.respond-to(tablet) {
     gap: var.$spacing-150; // 12px
+  }
+  @include mix.respond-to(desktop) {
+    width: 80%;
+    gap: var.$spacing-400; // 32px
   }
 
   .gallery,
@@ -44,12 +47,21 @@
       }
       .gallery__article-title {
         width: 60%;
+         @include mix.respond-to(desktop) { 
+      
+      width: 50%;
+    }
       }
       .gallery__article-text {
         color: var.$clr-neutral-grey-700;
         width: 80%;
+         @include mix.respond-to(desktop) { 
+      
+      width: 60%;
+    }
       }
     }
+   
   }
 
   .inspiration {
@@ -77,6 +89,11 @@
           height: 100%;
         }
       }
+    }
+    @include mix.respond-to(desktop) {
+      grid-template-columns: 1fr 28rem;
+
+      gap: var.$spacing-400; // 32px
     }
   }
 

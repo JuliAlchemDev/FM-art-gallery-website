@@ -185,6 +185,12 @@
     gap: 0.75rem;
   }
 }
+@media (min-width: 90rem) {
+  .main {
+    width: 80%;
+    gap: 2rem;
+  }
+}
 .main .gallery,
 .main .inspiration {
   width: 100%;
@@ -211,9 +217,21 @@
   .main .gallery .gallery__article-title {
     width: 60%;
   }
+}
+@media (min-width: 48rem) and (min-width: 90rem) {
+  .main .gallery .gallery__article-title {
+    width: 50%;
+  }
+}
+@media (min-width: 48rem) {
   .main .gallery .gallery__article-text {
     color: hsl(0, 0%, 27%);
     width: 80%;
+  }
+}
+@media (min-width: 48rem) and (min-width: 90rem) {
+  .main .gallery .gallery__article-text {
+    width: 60%;
   }
 }
 .main .inspiration {
@@ -238,6 +256,12 @@
   }
   .main .inspiration .inspiration__pic-2 img {
     height: 100%;
+  }
+}
+@media (min-width: 90rem) {
+  .main .inspiration {
+    grid-template-columns: 1fr 28rem;
+    gap: 2rem;
   }
 }
 .main img {
