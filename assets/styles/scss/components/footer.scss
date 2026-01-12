@@ -72,16 +72,16 @@
       }
 
       &[data-network="instagram"] {
-        background-image: url("../assets/icons/social/icon-instagram.svg");
+        background-image: url("../icons/social/icon-instagram.svg");
         &:hover {
-            background-image: url("../assets/icons/social/hover-instagram.svg");
+            background-image: url("../icons/social/hover-instagram.svg");
         }
       }
 
       &[data-network="twitter"] {
-        background-image: url("../assets/icons/social/icon-twitter.svg");
+        background-image: url("../icons/social/icon-twitter.svg");
         &:hover {
-            background-image: url("../assets/icons/social/hover-twitter.svg");
+            background-image: url("../icons/social/hover-twitter.svg");
         }
       }
       
