@@ -109,6 +109,14 @@
      @include mix.respond-to(tablet) {
      padding-inline: var.$spacing-500; // 40px;
     }
+     @include mix.respond-to(desktop) {
+      padding-block: var.$spacing-1000;
+      padding-inline: 0;
+     justify-content: space-around;
+     .footer__article-description{
+      max-width: 77%;
+     }
+    }
   }
 }
 

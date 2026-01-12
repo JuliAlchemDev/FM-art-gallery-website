@@ -392,6 +392,16 @@
     padding-inline: 2.5rem;
   }
 }
+@media (min-width: 90rem) {
+  .page--location .footer {
+    padding-block: 5rem;
+    padding-inline: 0;
+    justify-content: space-around;
+  }
+  .page--location .footer .footer__article-description {
+    max-width: 77%;
+  }
+}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
