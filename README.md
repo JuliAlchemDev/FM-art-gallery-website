@@ -43,9 +43,16 @@ Each part of this project helped me better understand how to structure frontend 
 
 ## 📸 Preview
 
-| Home Page                             | Location Map                         |
-| ------------------------------------- | ------------------------------------ |
-| ![Gallery homepage](https://github.com/user-attachments/assets/7e3df086-cefa-44ef-8eb0-1b9c98cbfcb8)       | ![Interactive location map](https://github.com/user-attachments/assets/c34170d0-89f5-46fb-93c4-5a036c4ef71a) |
+| Home Page & Location Map              |      
+| ------------------------------------- | 
+| ![Interactive location map](https://github.com/user-attachments/assets/ae88e015-4a87-44c9-bea4-f5e6a2fc660d) |
+
+
+
+
+
+
+
 
 
 
