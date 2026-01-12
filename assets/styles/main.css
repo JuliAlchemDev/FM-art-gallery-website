@@ -366,10 +366,10 @@
   outline: 3px solid hsl(24, 56%, 63%);
 }
 .footer .footer__nav-list .footer__nav-link[data-network=facebook] {
-  background-image: url("../assets/icons/social/icon-facebook.svg");
+  background-image: url("../icons/social/icon-facebook.svg");
 }
 .footer .footer__nav-list .footer__nav-link[data-network=facebook]:hover {
-  background-image: url("../assets/icons/social/hover-facebook.svg");
+  background-image: url("../icons/social/hover-facebook.svg");
 }
 .footer .footer__nav-list .footer__nav-link[data-network=instagram] {
   background-image: url("/assets/icons/social/icon-instagram.svg");
