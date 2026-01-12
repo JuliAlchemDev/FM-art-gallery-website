@@ -64,10 +64,10 @@
         outline: 3px solid var.$clr-primary-gold-500; 
       }
       &[data-network="facebook"] {
-        background-image: url("/assets/icons/social/icon-facebook.svg");
+        background-image: url("./assets/icons/social/icon-facebook.svg");
 
         &:hover {
-            background-image: url("/assets/icons/social/hover-facebook.svg");
+            background-image: url("./assets/icons/social/hover-facebook.svg");
         }
       }
 
