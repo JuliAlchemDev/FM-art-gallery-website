@@ -387,6 +387,11 @@
 .page--location .footer .footer__nav-link:focus {
   filter: brightness(0);
 }
+@media (min-width: 48rem) {
+  .page--location .footer {
+    padding-inline: 2.5rem;
+  }
+}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
